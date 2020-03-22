@@ -203,7 +203,7 @@ const particles = [
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 200,
           line_linked: {
             opacity: 1,
             width: 1
@@ -314,7 +314,7 @@ const particles = [
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 200,
           line_linked: {
             opacity: 1
           }
