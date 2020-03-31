@@ -1,0 +1,58 @@
+.image-box {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  flex-flow: row;
+  max-width: 60%;
+  background-color: #fff;
+  border-radius: 1em;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 2s;
+  display: block;
+  height: auto;
+  transform: scale(1);
+}
+
+.image-box:hover img {
+  transform: scale(1.2);
+}
+.overlay {
+  border-radius: 1em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+.image-box:hover .overlay {
+  opacity: 0.8;
+}
+.hoveringText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 650px) {
+  .image-box {
+    max-width: 100%;
+  }
+}
