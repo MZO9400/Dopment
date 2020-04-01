@@ -7,11 +7,19 @@ import AboutUs from "./AboutUs/AboutUs";
 import Services from "./Services/Services";
 import Work from "./Work/Work";
 import Footer from "./Footer/Footer";
+import InfoModal from "../InfoModal/InfoModal";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import Marquee from "../../Components/Marquee/Marquee";
 
 export default class extends React.Component {
+  state = {
+    getInTouchModal: false
+  };
+  toggleDrawer = () =>
+    this.setState(state => {
+      return { getInTouchModal: !state.getInTouchModal };
+    });
   render() {
     return (
       <div className={CSS.main}>
@@ -26,6 +34,9 @@ export default class extends React.Component {
             "z-index": "-9999"
           }}
         />
+        {!this.state.getInTouchModal && (
+          <InfoModal ShutDownModal={this.toggleDrawer} />
+        )}
         <div className={CSS.heading}>
           <h1>
             We shape brand identities and design digital experiences to help
@@ -35,14 +46,7 @@ export default class extends React.Component {
         <AboutUs />
         <Services />
         <Work />
-        <Marquee
-          text="Get in touch"
-          onClick={() =>
-            this.setState(state => {
-              return { Modal: !state.Modal };
-            })
-          }
-        />
+        <Marquee text="Get in touch" onClick={this.toggleDrawer} />
         <Footer />
       </div>
     );
