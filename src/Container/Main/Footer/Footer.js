@@ -92,7 +92,6 @@ export default props => {
                 icon={faArrowLeft}
                 onClick={() => decIdx(setIdx, idx)}
               />
-              <p>Our Affiliates</p>
               <FontAwesomeIcon
                 icon={faArrowRight}
                 onClick={() => incIdx(setIdx, idx)}
