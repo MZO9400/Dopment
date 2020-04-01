@@ -1,0 +1,70 @@
+.main {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.Title span {
+  position: relative;
+  padding-bottom: 5px;
+}
+.Title span::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 4px solid #1a7cb5;
+  content: "";
+}
+.splitIconText {
+  display: flex;
+  align-items: center;
+}
+.splitIconText svg {
+  margin-right: 1.5em;
+}
+.bulletList {
+  align-items: stretch;
+  list-style: none;
+  padding: 0px;
+}
+.bulletList li {
+  line-height: 3em;
+}
+.bulletList li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #1a7cb5;
+}
+@media (max-width: 600px) {
+  .main {
+    display: block;
+  }
+}
+.lastRow {
+  padding: 40px;
+}
+.LastLeft {
+  font-size: 0.7em;
+  color: #bbb;
+  float: left;
+}
+.LastRight {
+  float: right;
+}
+.LastRight * {
+  margin: 0px 4px;
+}
+.main a,
+.lastRow a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main a:visited,
+.lastRow a:visited {
+  color: #bbb;
+}
