@@ -2,7 +2,6 @@ import React from "react";
 import CSS from "./Main.module.css";
 import Particles from "react-particles-js";
 import particleConfig from "./Particles";
-import ServiceCard from "./ServiceCard/ServiceCard";
 import AboutUs from "./AboutUs/AboutUs";
 import Services from "./Services/Services";
 import Work from "./Work/Work";
@@ -10,8 +9,6 @@ import Footer from "./Footer/Footer";
 import InfoModal from "../InfoModal/InfoModal";
 import Nav from "../Nav/Nav";
 import Marquee from "../../Components/Marquee/Marquee";
-import { TransitionGroup } from "react-transition-group";
-import "animate.css/animate.min.css";
 
 export default class extends React.Component {
   constructor(props) {

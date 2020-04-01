@@ -11,13 +11,14 @@ class InfoModal extends React.Component {
     details: ""
   };
   validateEmail = () =>
-    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email);
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ /* eslint-disable-line */
+      .test(this.state.email);
   validateName = () =>
-    /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(this.state.name);
+    /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/ /* eslint-disable-line */
+      .test(this.state.name);
   validatePhone = () =>
-    /(([+][(]?[0-9]{1,3}[)]?)|([(]?[0-9]{4}[)]?))\s*[)]?[-\s\.]?[(]?[0-9]{1,3}[)]?([-\s\.]?[0-9]{3})([-\s\.]?[0-9]{3,4})/.test(
-      this.state.phone
-    ) && this.state.phone.length >= 5;
+    /(([+][(]?[0-9]{1,3}[)]?)|([(]?[0-9]{4}[)]?))\s*[)]?[-\s\.]?[(]?[0-9]{1,3}[)]?([-\s\.]?[0-9]{3})([-\s\.]?[0-9]{3,4})/ /* eslint-disable-line */
+      .test(this.state.phone) && this.state.phone.length >= 5;
   validateProject = () => this.state.project.length > 5;
   validateAll = () => {
     this.validateName() &&

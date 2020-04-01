@@ -5,7 +5,7 @@ export default props => {
   let [navBtn, setNavBtn] = React.useState(false);
   return (
     <div className={CSS.nav}>
-      <img src={DOPMENT} className={CSS.img} />
+      <img src={DOPMENT} className={CSS.img} alt="not available" />
       <div className={CSS["nav-header"]}>
         <div className={[CSS.mainText, CSS["nav-title"]].join(" ")}>
           DOPMENT
