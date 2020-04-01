@@ -11,6 +11,16 @@
   box-shadow: 0px 0px 2em #0009;
   border-radius: 0.5em;
 }
+.show {
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+.hide {
+  opacity: 0;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.6s linear;
+}
 .modal {
   padding: 10%;
 }

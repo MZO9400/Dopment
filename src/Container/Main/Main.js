@@ -8,10 +8,10 @@ import Services from "./Services/Services";
 import Work from "./Work/Work";
 import Footer from "./Footer/Footer";
 import InfoModal from "../InfoModal/InfoModal";
-import "animate.css/animate.min.css";
 import Nav from "../Nav/Nav";
-import ScrollAnimation from "react-animate-on-scroll";
 import Marquee from "../../Components/Marquee/Marquee";
+import { TransitionGroup } from "react-transition-group";
+import "animate.css/animate.min.css";
 
 export default class extends React.Component {
   constructor(props) {
@@ -24,15 +24,6 @@ export default class extends React.Component {
   }
   state = {
     getInTouchModal: false
-  };
-  componentDidUpdate = () => {
-    console.log(
-      this.HomeRef,
-      this.ServiceRef,
-      this.WorkRef,
-      this.AboutRef,
-      this.ContactRef
-    );
   };
   toggleDrawer = () =>
     this.setState(state => {
@@ -52,9 +43,10 @@ export default class extends React.Component {
             zIndex: "-9999"
           }}
         />
-        {this.state.getInTouchModal && (
-          <InfoModal ShutDownModal={this.toggleDrawer} />
-        )}
+        <InfoModal
+          ShutDownModal={this.toggleDrawer}
+          open={this.state.getInTouchModal}
+        />
         <Nav
           home={this.HomeRef}
           service={this.ServiceRef}

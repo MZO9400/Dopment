@@ -1,6 +1,5 @@
 import React from "react";
 import CSS from "./InfoModal.module.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 class InfoModal extends React.Component {
@@ -16,7 +15,7 @@ class InfoModal extends React.Component {
   validateName = () =>
     /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/.test(this.state.name);
   validatePhone = () =>
-    /^(?:(\+))?(?:[0-9]{0,3}[\s.\/-]?)?(?:(?:\((?=\d{3}\)))?(\d{3})(?:(?!\(\d{3})\))?[\s.\/-]?)?(?:(?:\((?=\d{3}\)))?(\d{3})(?:(?!\(\d{3})\))?[\s.\/-]?)?(?:(?:\((?=\d{4}\)))?(\d{4})(?:(?!\(\d{4})\))?[\s.\/-]?)?$/g.test(
+    /(([+][(]?[0-9]{1,3}[)]?)|([(]?[0-9]{4}[)]?))\s*[)]?[-\s\.]?[(]?[0-9]{1,3}[)]?([-\s\.]?[0-9]{3})([-\s\.]?[0-9]{3,4})/.test(
       this.state.phone
     ) && this.state.phone.length >= 5;
   validateProject = () => this.state.project.length > 5;
@@ -28,7 +27,7 @@ class InfoModal extends React.Component {
   };
   render = () => {
     return (
-      <>
+      <div className={[CSS.show, this.props.open ? "" : CSS.hide].join(" ")}>
         <div className={CSS.backdrop} onClick={this.props.ShutDownModal}></div>
         <div className={CSS.main}>
           <div className={CSS.firstLine}>
@@ -98,7 +97,7 @@ class InfoModal extends React.Component {
             </button>
           </div>
         </div>
-      </>
+      </div>
     );
   };
 }
