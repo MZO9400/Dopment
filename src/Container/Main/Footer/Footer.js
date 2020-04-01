@@ -106,19 +106,39 @@ export default props => {
           All Rights Reserved, DOPMENT 2020, Muhammad Hamza 2020
         </div>
         <div className={CSS.LastRight}>
-          <a href="https://www.facebook.com/dopment" target="_blank">
+          <a
+            href="https://www.facebook.com/dopment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Facebook
           </a>
-          <a href="https://www.instagram.com/dopment" target="_blank">
+          <a
+            href="https://www.instagram.com/dopment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Instagram
           </a>
-          <a href="https://www.twitter.com/dopment" target="_blank">
+          <a
+            href="https://www.twitter.com/dopment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Twitter
           </a>
-          <a href="https://www.linkedin.com/dopment" target="_blank">
+          <a
+            href="https://www.linkedin.com/dopment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
-          <a href="https://mzo9400.github.io" target="_blank">
+          <a
+            href="https://mzo9400.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
         </div>
