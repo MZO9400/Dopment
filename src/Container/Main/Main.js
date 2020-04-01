@@ -4,6 +4,7 @@ import Particles from "react-particles-js";
 import particleConfig from "./Particles";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import AboutUs from "./AboutUs/AboutUs";
+import Services from "./Services/Services";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import Marquee from "../../Components/Marquee/Marquee";
@@ -30,6 +31,7 @@ export default class extends React.Component {
           </h1>
         </div>
         <AboutUs />
+        <Services />
         <Marquee text="About Us" link="/AboutUS" />
         <Marquee text="Get in touch" link="/ContactUS" />
       </div>
