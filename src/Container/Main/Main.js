@@ -35,7 +35,14 @@ export default class extends React.Component {
         <AboutUs />
         <Services />
         <Work />
-        <Marquee text="Get in touch" link="/ContactUS" />
+        <Marquee
+          text="Get in touch"
+          onClick={() =>
+            this.setState(state => {
+              return { Modal: !state.Modal };
+            })
+          }
+        />
         <Footer />
       </div>
     );

@@ -43,6 +43,21 @@
   .main {
     display: block;
   }
+  .lastRow {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .LastLeft {
+    float: none;
+    text-align: center;
+    align-self: center;
+  }
+  .LastRight {
+    margin-bottom: 2em;
+    float: none;
+    text-align: center;
+    align-self: center;
+  }
 }
 .lastRow {
   padding: 40px;
