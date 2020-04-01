@@ -9,25 +9,25 @@ export default props => (
         <Typewriter
           onInit={typewriter => {
             typewriter
-              .typeString("Hello World!")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("We are DOPMENT")
-              .pauseFor(1000)
-              .deleteChars(8)
-              .typeString(" the future!")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("Your design")
-              .pauseFor(1000)
-              .deleteChars(6)
-              .typeString("idea")
-              .pauseFor(1000)
-              .deleteChars(4)
-              .typeString("thoughts")
-              .pauseFor(1000)
-              .typeString("... Our Implementation!")
-              .start();
+            .typeString("Hello World!")
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString("We are DOPMENT")
+            .pauseFor(1000)
+            .deleteChars(8)
+            .typeString(" the future!")
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString("Your design")
+            .pauseFor(1000)
+            .deleteChars(6)
+            .typeString("idea")
+            .pauseFor(1000)
+            .deleteChars(4)
+            .typeString("thoughts")
+            .pauseFor(1000)
+            .typeString("... Our Implementation!")
+            .start();
           }}
           options={{ loop: true }}
         />
