@@ -16,10 +16,14 @@
   transition: all 0.6s linear;
 }
 .hide {
+  z-index: -999999;
   opacity: 0;
   overflow: hidden;
   height: 0px;
   transition: all 0.6s linear;
+}
+.hide * {
+  display: none;
 }
 .modal {
   padding: 10%;
