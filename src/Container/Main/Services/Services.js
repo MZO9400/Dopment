@@ -55,7 +55,7 @@ const Services = [
   }
 ];
 export default props => (
-  <div className={CSS.main}>
+  <div className={CSS.main} ref={props.refr}>
     <h1>OUR SERVICES</h1>
     <p>
       Dopment strive to make your business match up the steps of this

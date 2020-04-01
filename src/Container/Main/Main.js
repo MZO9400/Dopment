@@ -9,12 +9,30 @@ import Work from "./Work/Work";
 import Footer from "./Footer/Footer";
 import InfoModal from "../InfoModal/InfoModal";
 import "animate.css/animate.min.css";
+import Nav from "../Nav/Nav";
 import ScrollAnimation from "react-animate-on-scroll";
 import Marquee from "../../Components/Marquee/Marquee";
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props);
+    this.HomeRef = React.createRef();
+    this.ServiceRef = React.createRef();
+    this.WorkRef = React.createRef();
+    this.AboutRef = React.createRef();
+    this.ContactRef = React.createRef();
+  }
   state = {
     getInTouchModal: false
+  };
+  componentDidUpdate = () => {
+    console.log(
+      this.HomeRef,
+      this.ServiceRef,
+      this.WorkRef,
+      this.AboutRef,
+      this.ContactRef
+    );
   };
   toggleDrawer = () =>
     this.setState(state => {
@@ -31,23 +49,30 @@ export default class extends React.Component {
             top: 0,
             width: "100%",
             height: "100%",
-            "z-index": "-9999"
+            zIndex: "-9999"
           }}
         />
-        {!this.state.getInTouchModal && (
+        {this.state.getInTouchModal && (
           <InfoModal ShutDownModal={this.toggleDrawer} />
         )}
-        <div className={CSS.heading}>
+        <Nav
+          home={this.HomeRef}
+          service={this.ServiceRef}
+          about={this.AboutRef}
+          work={this.WorkRef}
+          contact={this.ContactRef}
+        />
+        <div className={CSS.heading} ref={this.HomeRef}>
           <h1>
             We shape brand identities and design digital experiences to help
             organizations innovate their business
           </h1>
         </div>
-        <AboutUs />
-        <Services />
-        <Work />
+        <AboutUs refr={this.AboutRef} />
+        <Services refr={this.ServiceRef} />
+        <Work refr={this.WorkRef} />
         <Marquee text="Get in touch" onClick={this.toggleDrawer} />
-        <Footer />
+        <Footer refr={this.ContactRef} />
       </div>
     );
   }

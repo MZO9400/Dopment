@@ -1,8 +1,7 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 import CSS from "./Nav.module.css";
 import DOPMENT from "../../Images/DOPMENT.png";
-export default withRouter(props => {
+export default props => {
   let [navBtn, setNavBtn] = React.useState(false);
   return (
     <div className={CSS.nav}>
@@ -22,12 +21,42 @@ export default withRouter(props => {
         </label>
       </div>
       <div className={[CSS["nav-links"], navBtn ? "" : CSS.display].join(" ")}>
-        <li onClick={() => props.history.push("/")}>Home</li>
-        <li onClick={() => props.history.push("/services")}>Services</li>
-        <li onClick={() => props.history.push("/work")}>Work</li>
-        <li onClick={() => props.history.push("/about-us")}>About</li>
-        <li onClick={() => props.history.push("/contact-us")}>Contact</li>
+        <li
+          onClick={() =>
+            props.home.current.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Home
+        </li>
+        <li
+          onClick={() =>
+            props.about.current.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          About
+        </li>
+        <li
+          onClick={() =>
+            props.service.current.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Services
+        </li>
+        <li
+          onClick={() =>
+            props.work.current.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Work
+        </li>
+        <li
+          onClick={() =>
+            props.contact.current.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Contact
+        </li>
       </div>
     </div>
   );
-});
+};

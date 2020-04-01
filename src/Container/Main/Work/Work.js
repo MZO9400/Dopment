@@ -7,7 +7,7 @@ class OurWork extends React.Component {
   };
   render = () => {
     return (
-      <div className={CSS.main}>
+      <div className={CSS.main} ref={this.props.refr}>
         <div>
           <h1 style={{ color: "#1a7cb5" }}>Our Work</h1>
           <p>

@@ -83,3 +83,32 @@
 .lastRow a:visited {
   color: #bbb;
 }
+.buttons {
+  display: flex;
+}
+.buttons * {
+  cursor: pointer;
+  padding: 5px;
+}
+.imgdiv {
+  width: 100%;
+  background-color: #1c1c1c;
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  transition: all 1s linear;
+}
+.imgdiv * {
+  margin: auto;
+  transition: all 1s linear;
+}
+.image {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #fff;
+  text-align: center;
+  width: 5em;
+  transition: all 1s linear;
+}
