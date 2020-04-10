@@ -4,6 +4,12 @@ import DOPMENT from "../../Images/DOPMENT.png";
 
 export default props => {
     let [navBtn, setNavBtn] = React.useState(false);
+
+    React.useEffect(() => {
+        if (window.innerWidth >= 600) {
+            setNavBtn(true);
+        };
+    }, [])
     return (
         <div className={CSS.nav}>
             <img src={DOPMENT} className={CSS.img} alt="not available"/>

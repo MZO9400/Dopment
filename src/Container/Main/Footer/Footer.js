@@ -97,7 +97,7 @@ export default props => {
             </div>
             <div className={CSS.lastRow}>
                 <div className={CSS.LastLeft}>
-                    All Rights Reserved, DOPMENT 2020, Muhammad Hamza 2020
+                    All Rights Reserved, DOPMENT 2020
                 </div>
                 <div className={CSS.LastRight}>
                     <a

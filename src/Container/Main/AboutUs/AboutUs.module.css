@@ -9,9 +9,14 @@
 }
 
 .left {
-    width: 50%;
+    width: 40%;
+    margin-right: 10%;
     position: relative;
     height: auto;
+    background: lightblue url("../../../Images/AIDL.jpg") no-repeat fixed center;
+    background-color: #0007;
+    background-size: cover;
+    border-radius: 2em;
 }
 
 .left * {

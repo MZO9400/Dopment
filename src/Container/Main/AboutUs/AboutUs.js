@@ -38,8 +38,8 @@ export default props => (
                 <h2>DOPMENT</h2>
                 <h2>DEVELOPING DREAMS</h2>
                 <p>
-                    Dopment is a pioneer solution to all your software needs. Our 12 years
-                    of dedication and a list of the happy global customer is what makes
+                    Dopment is a pioneer solution to all your software needs. Our  dedication
+                    and a list of the happy global customers is what makes
                     Dopment own a reputable position in the market. We concentrate on the
                     company’s goals and purposes, market drifts, and evolving business
                     environment. If you are obsessed with the word “success” for your
