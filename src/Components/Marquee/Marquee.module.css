@@ -1,32 +1,34 @@
 .container {
-  color: #fff8;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 72px;
-  -webkit-font-smoothing: antialiased;
-  transition: all 0.3s linear;
+    color: #fff8;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 72px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s linear;
 }
+
 .container:hover {
-  color: #ffff;
+    color: #ffff;
 }
 
 .scrolling {
-  animation: marquee 8s linear infinite;
-  display: inline-block;
-  padding-right: 72px;
+    animation: marquee 8s linear infinite;
+    display: inline-block;
+    padding-right: 72px;
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
+
 @media (max-width: 650px) {
-  .container {
-    font-size: 1.5em;
-  }
+    .container {
+        font-size: 1.5em;
+    }
 }

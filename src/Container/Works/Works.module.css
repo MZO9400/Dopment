@@ -1,0 +1,19 @@
+.worksList {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    cursor: pointer;
+    color: white;
+    background-color: #3c3c3c;
+    border-radius: 1em;
+    outline: 0;
+    border: none;
+    padding: 1em 2em;
+    align-self: center;
+}

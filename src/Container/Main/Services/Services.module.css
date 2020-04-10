@@ -1,16 +1,19 @@
 .main h1 {
-  color: #1a7cb5;
+    color: #1a7cb5;
 }
+
 .main {
-  padding: 40px 80px;
+    padding: 40px 80px;
 }
+
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 @media (max-width: 600px) {
-  .cards {
-    display: block;
-    flex-wrap: none;
-  }
+    .cards {
+        display: block;
+        flex-wrap: none;
+    }
 }

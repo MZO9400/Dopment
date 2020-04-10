@@ -5,10 +5,10 @@ import * as serviceWorker from "./serviceWorker";
 import Main from "./Container/Main/Main";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Main />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <Main/>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

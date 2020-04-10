@@ -1,28 +1,31 @@
 .main {
-  padding: 40px 80px;
+    padding: 40px 80px;
 }
+
 .nav-links {
-  text-align: center;
-  display: block;
-  font-size: 18px;
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
+
 .nav-links > li {
-  padding: 13px 10px 13px 10px;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
+    padding: 13px 10px 13px 10px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 .nav-links > li::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 .nav-links > li:hover::after {
-  width: 100%;
+    width: 100%;
 }
