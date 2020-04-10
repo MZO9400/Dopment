@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Dopment/static/css/main.5b33f6b9.chunk.css",
-    "main.js": "/Dopment/static/js/main.726403cf.chunk.js",
-    "main.js.map": "/Dopment/static/js/main.726403cf.chunk.js.map",
+    "main.css": "/Dopment/static/css/main.a16ab1aa.chunk.css",
+    "main.js": "/Dopment/static/js/main.e1b07aab.chunk.js",
+    "main.js.map": "/Dopment/static/js/main.e1b07aab.chunk.js.map",
     "runtime-main.js": "/Dopment/static/js/runtime-main.497dfd6e.js",
     "runtime-main.js.map": "/Dopment/static/js/runtime-main.497dfd6e.js.map",
     "static/css/2.d9ee7e2f.chunk.css": "/Dopment/static/css/2.d9ee7e2f.chunk.css",
-    "static/js/2.c2596a96.chunk.js": "/Dopment/static/js/2.c2596a96.chunk.js",
-    "static/js/2.c2596a96.chunk.js.map": "/Dopment/static/js/2.c2596a96.chunk.js.map",
+    "static/js/2.3f90af90.chunk.js": "/Dopment/static/js/2.3f90af90.chunk.js",
+    "static/js/2.3f90af90.chunk.js.map": "/Dopment/static/js/2.3f90af90.chunk.js.map",
     "index.html": "/Dopment/index.html",
-    "precache-manifest.f6a3d4792634bbffcddab182ba24b72d.js": "/Dopment/precache-manifest.f6a3d4792634bbffcddab182ba24b72d.js",
+    "precache-manifest.a467ec2ab8ef7cb10bd6bb6b9801a82a.js": "/Dopment/precache-manifest.a467ec2ab8ef7cb10bd6bb6b9801a82a.js",
     "service-worker.js": "/Dopment/service-worker.js",
     "static/css/2.d9ee7e2f.chunk.css.map": "/Dopment/static/css/2.d9ee7e2f.chunk.css.map",
-    "static/css/main.5b33f6b9.chunk.css.map": "/Dopment/static/css/main.5b33f6b9.chunk.css.map",
-    "static/js/2.c2596a96.chunk.js.LICENSE.txt": "/Dopment/static/js/2.c2596a96.chunk.js.LICENSE.txt",
+    "static/css/main.a16ab1aa.chunk.css.map": "/Dopment/static/css/main.a16ab1aa.chunk.css.map",
+    "static/js/2.3f90af90.chunk.js.LICENSE.txt": "/Dopment/static/js/2.3f90af90.chunk.js.LICENSE.txt",
     "static/media/1.png": "/Dopment/static/media/1.69528f4f.png",
     "static/media/1.jpg": "/Dopment/static/media/1.ec1ce443.jpg",
     "static/media/10.png": "/Dopment/static/media/10.14981d49.png",
@@ -60,6 +60,7 @@
     "static/media/8.png": "/Dopment/static/media/8.e6b5ecc5.png",
     "static/media/9.png": "/Dopment/static/media/9.1daf2854.png",
     "static/media/9.jpg": "/Dopment/static/media/9.54e1e6b6.jpg",
+    "static/media/AIDL.jpg": "/Dopment/static/media/AIDL.edf237c4.jpg",
     "static/media/Chicken-Hut_png.png": "/Dopment/static/media/Chicken-Hut_png.69528f4f.png",
     "static/media/D8 logo png.png": "/Dopment/static/media/D8 logo png.1605c12e.png",
     "static/media/DOPMENT.png": "/Dopment/static/media/DOPMENT.eee34e18.png",
@@ -92,8 +93,8 @@
   "entrypoints": [
     "static/js/runtime-main.497dfd6e.js",
     "static/css/2.d9ee7e2f.chunk.css",
-    "static/js/2.c2596a96.chunk.js",
-    "static/css/main.5b33f6b9.chunk.css",
-    "static/js/main.726403cf.chunk.js"
+    "static/js/2.3f90af90.chunk.js",
+    "static/css/main.a16ab1aa.chunk.css",
+    "static/js/main.e1b07aab.chunk.js"
   ]
 }
