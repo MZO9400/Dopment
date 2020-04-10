@@ -11,9 +11,10 @@
     cursor: pointer;
     color: white;
     background-color: #3c3c3c;
-    border-radius: 1em;
+    border-radius: 2em;
     outline: 0;
     border: none;
     padding: 1em 2em;
     align-self: center;
+    margin: 1em 1em 2em;
 }

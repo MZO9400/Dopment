@@ -141,15 +141,23 @@ class Works extends React.Component {
         let {showCount} = this.state;
         showCount = (showCount + 4) >= this.state.selected.length ? this.state.selected.length : showCount + 4;
         this.setState({showCount: showCount});
+        this.props.refr.current.scrollIntoView({behavior: "smooth"})
+    }
+    showPrev = () => {
+        let {showCount} = this.state;
+        showCount = (showCount - 4) >= 4 ? showCount - 4 : 4;
+        this.setState({showCount: showCount});
     }
     allImagesShown = () => this.state.showCount >= this.state.selected.length;
 
     render() {
         return (
             <div className={CSS.main}>
+                {this.state.showCount > 4 && <button onClick={this.showPrev} className={CSS.button}>Previous</button>}
                 <div className={CSS.worksList}>
                     {
-                        this.state.selected.slice(0, this.state.showCount).map((item, key) => <ServiceCard {...item} />)
+                        this.state.selected.slice(this.state.showCount - 4, this.state.showCount).map((item, key) =>
+                            <ServiceCard {...item} key={key} />)
                     }
                 </div>
                 {!this.allImagesShown() && <button onClick={this.showMore} className={CSS.button}>More</button>}

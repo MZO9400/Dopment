@@ -15,10 +15,10 @@ export default props => {
             <div className={CSS["nav-btn"]} onClick={() => setNavBtn(!navBtn)}>
                 <label>
           <span
-              style={{
-                  transform: navBtn ? "rotate(135deg)" : ""
-              }}
-          ></span>
+    style={{
+        transform: navBtn ? "rotate(135deg)" : ""
+    }}
+    />
                 </label>
             </div>
             <div className={[CSS["nav-links"], navBtn ? "" : CSS.display].join(" ")}>

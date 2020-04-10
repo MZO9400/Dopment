@@ -75,7 +75,7 @@ class OurWork extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Works tab={this.state.selected}/>
+                <Works tab={this.state.selected} refr={this.props.refr}/>
             </div>
         );
     };
