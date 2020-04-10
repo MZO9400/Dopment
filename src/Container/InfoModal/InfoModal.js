@@ -27,10 +27,16 @@ class InfoModal extends React.Component {
         this.validatePhone() &&
         this.validateProject();
     };
+    calculateWidth = (text, placeholder) => {
+        if (text.length >= 20) {
+            return "20rem";
+        }
+        return text.length === 0 ? `${placeholder.length/2}rem` : `${text.length/2}rem`;
+    }
     render = () => {
         return (
             <div className={[CSS.show, this.props.open ? "" : CSS.hide].join(" ")}>
-                <div className={CSS.backdrop} onClick={this.props.ShutDownModal}></div>
+                <div className={CSS.backdrop} onClick={this.props.ShutDownModal}/>
                 <div className={CSS.main}>
                     <div className={CSS.firstLine}>
                         <p>FILL OUT YOUR INFO</p>
@@ -47,6 +53,7 @@ class InfoModal extends React.Component {
                                 onChange={e => this.setState({name: e.target.value})}
                                 type="name"
                                 className={CSS.input}
+                                style={{width: this.calculateWidth(this.state.name, "John/Janet Doe*")}}
                                 placeholder="John/Janet Doe*"
                             />
                             <p>accessible at my email</p>
@@ -55,6 +62,7 @@ class InfoModal extends React.Component {
                                 onChange={e => this.setState({email: e.target.value})}
                                 type="email"
                                 className={CSS.input}
+                                style={{width: this.calculateWidth(this.state.email, "someone@something.com*")}}
                                 placeholder="someone@something.com*"
                             />
                             <p>or my phone</p>
@@ -63,6 +71,7 @@ class InfoModal extends React.Component {
                                 onChange={e => this.setState({phone: e.target.value})}
                                 type="phone"
                                 className={CSS.input}
+                                style={{width: this.calculateWidth(this.state.phone, "+92 300 0000000*")}}
                                 placeholder="+92 300 0000000*"
                             />
                             <p>... My Project is about</p>
@@ -71,6 +80,7 @@ class InfoModal extends React.Component {
                                 onChange={e => this.setState({project: e.target.value})}
                                 type="text"
                                 className={CSS.input}
+                                style={{width: this.calculateWidth(this.state.project, "<awesome project idea>*")}}
                                 placeholder="<awesome project idea>*"
                             />
 
